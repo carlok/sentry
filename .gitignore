@@ -1,0 +1,10 @@
+.env
+priv.md
+yarn.lock
+# package directories
+node_modules
+
+serverless.yml
+
+# Serverless directories
+.serverless

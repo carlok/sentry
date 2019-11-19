@@ -1,0 +1,19 @@
+{
+  "name": "sentry",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {
+    "aws-sdk": "2.573.0",
+    "html-to-text": "5.1.1",
+    "node-env-file": "0.1.8",
+    "nodemailer": "6.3.1",
+    "nodemailer-ses-transport": "1.5.1",
+    "request": "2.88.0",
+    "request-promise": "4.2.5",
+    "request-promise-native": "1.0.8",
+    "require": "2.4.20"
+  },
+  "devDependencies": {
+    "serverless-offline": "5.12.0"
+  }
+}
