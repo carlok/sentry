@@ -8,3 +8,8 @@ serverless.yml
 
 # Serverless directories
 .serverless
+
+old/
+.vscode/
+venv/
+__pycache__/
