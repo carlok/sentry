@@ -15,7 +15,6 @@ import urllib3
 def error_local(vhost, error_code):
     message = '[CEF] λ Error: ' + vhost
     mail_error(message, message + "\n" + error_code)
-    print(error_code)
 
 
 def mail_error(subject, body):
@@ -49,19 +48,14 @@ def mail_error(subject, body):
 def vhost_https_get(vhost):
     try:
         url = 'https://' + vhost + '.cliccaefinanzia.it/api/v1/proposals/public'
-        print(url)
         response = requests.get(url, verify=False, timeout=10)
-
-        print(response.status_code)
 
         if response.status_code != 200:
             error_local(vhost, 'HTTP != 200')
     except HTTPError as http_err:
         error_local(vhost, str(http_err))
-        print(str(http_err))
     except Exception as err:
         error_local(vhost, str(err))
-        print(str(err))
     return
 
 
